@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+h2 {color: blue;}
+body{
+    background: #f6f5f7;
+    font-family: 'monserrat', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+    padding-top: 70PX;
+}
+header{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+h1{
+    margin-top: 0;
+}
+h2{
+    margin-bottom: 10px;
+}
+nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: #fdfbfb;
+    padding: 10px;
+    display: inline-block;
+}
+nav a:hover{
+    background-color: #ddd;
+}
+main{
+    max-width: 800px;
+    margin: 0 auto;
+}
+section{
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+#acera-de-mi{
+    text-align: justify;
+}
+#contacto{
+    form {
+        margin: 0 auto;
+        width: 500px;
+    }
+}
+#contacto form input,
+#contacto from textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+#contacto fprm textarea{
+    height: 100px;
+}
+contacto form input[type="submit"]{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+#experiencias ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#experiencias ul li {
+    margin-bottom: 10px;
+}
+#experiencias ul li strong{
+    font-weight: bold;
+}
+#habilidades ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#habilidades ul li{
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#proyectos ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#proyectos ul li{
+    margin-bottom: 10px;
+}
+#proyectos ul li a{
+    text-decoration: none;
+    color: #333;
+}
+#proyectos ul li a:hover{
+    text-decoration: underline;
+}
+.menu-fijo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+.menu-fijo.fijo{
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.animacion-titulo{
+    opacity: 0;
+    animation: aparecer 3s ease-in-out;
+}
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
